@@ -1,30 +1,28 @@
 import { DIRECTION_LEFT, DIRECTION_RIGHT, DIRECTION_UP, DIRECTION_DOWN } from './constants' 
 
 function getKeyFrameModifier(direction) {
-    const dir = direction.toLowerCase();
+    const dir = direction.toLowerCase()
     switch (dir) {
         case DIRECTION_LEFT:
-          return directionLeft;
+          return directionLeft
         case DIRECTION_RIGHT:
-          return directionRight;
+          return directionRight
         case DIRECTION_UP:
-          return directionUp;
+          return directionUp
         case DIRECTION_DOWN:
-          return directionDown;
+          return directionDown
         default:
-          return () => {};
+          return () => {}
       }
 }
 
 function directionLeft(boundingRect)  {
     let distance = boundingRect.width
-    console.log(boundingRect)
     return getHorizontal(-distance, 'INFINITESCROLLLEFT')
 }
 
 function directionRight(boundingRect)  {
     let distance = boundingRect.width
-    console.log(boundingRect)
     return getHorizontal(distance, 'INFINITESCROLLRIGHT') + `.infinite-scroll-right {position:absolute;left:${-distance}px`
 }
 
