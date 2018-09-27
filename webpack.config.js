@@ -6,8 +6,7 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'example/index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, 'example/dist'),
     filename: '[name].js'
   },
   module: {

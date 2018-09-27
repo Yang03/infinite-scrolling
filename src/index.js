@@ -14,7 +14,6 @@ class InfiniteScroll extends React.Component {
     }
     componentDidMount() {
         this.boundingRect = this.scrollItem.getBoundingClientRect()
-        console.log(this.container.getBoundingClientRect())
         this.animationLoop()
     }
     animationModifier(speed) {
