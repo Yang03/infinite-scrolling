@@ -19,22 +19,22 @@ class Test extends React.Component {
         return (
             <div className="example">
                 <div className="box up">
-                    <InfiniteScroll speed={5} direction={'up'}>
+                    <InfiniteScroll duration={5} direction={'up'}>
                         {arr.map((item) => <p>{item}</p>)}
                     </InfiniteScroll>
                 </div>
                 <div className="box left">
-                    <InfiniteScroll speed={25} direction={'left'}>
+                    <InfiniteScroll duration={25} direction={'left'}>
                         {arr.map((item) => <p>{item}</p>)}
                     </InfiniteScroll>
                 </div>
                 <div className="box down">
-                    <InfiniteScroll speed={5} direction={'down'}>
+                    <InfiniteScroll duration={5} direction={'down'}>
                         {arr.map((item) => <p>{item}</p>)}
                     </InfiniteScroll>
                 </div>
                 <div className="box right">
-                    <InfiniteScroll speed={25} direction={'right'}>
+                    <InfiniteScroll duration={25} direction={'right'}>
                         {arr.map((item) => <p>{item}</p>)}
                     </InfiniteScroll>
                 </div>

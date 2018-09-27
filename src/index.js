@@ -1,5 +1,6 @@
 import React from 'react'
-import { DIRECTION_RIGHT, DIRECTION_DOWN } from './constants' 
+import PropTypes from "prop-types"
+import { DIRECTION_LEFT, DIRECTION_RIGHT, DIRECTION_UP, DIRECTION_DOWN  } from './constants' 
 import { getKeyFrameModifier } from './modifiers'
 
 class InfiniteScroll extends React.Component {
@@ -26,7 +27,7 @@ class InfiniteScroll extends React.Component {
         style.type = 'text/css'
         style.innerHTML = modifier(this.boundingRect)
         document.getElementsByTagName('head')[0].appendChild(style)
-        let animation = this.animationModifier(this.props.speed)
+        let animation = this.animationModifier(this.props.duration)
         this.container.style.animation = animation
         this.container.style.WebkitAnimation = animation
     }
@@ -63,5 +64,21 @@ class InfiniteScroll extends React.Component {
         </div>)
     }
 }
+
+InfiniteScroll.propTypes = {
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
+    direction: PropTypes.oneOf([DIRECTION_LEFT, DIRECTION_RIGHT, DIRECTION_UP, DIRECTION_DOWN]),
+    mouseOver: PropTypes.func,
+    mouseOut: PropTypes.func,
+    duration: PropTypes.number
+  }
+
+InfiniteScroll.defaultProps = {
+    children: null,
+    direction: DIRECTION_LEFT,
+    duration: 10,
+    mouseOver: null,
+    mouseOut: null
+  }
 
 export default InfiniteScroll

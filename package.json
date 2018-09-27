@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Yang03/react-infinite-scroll#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
