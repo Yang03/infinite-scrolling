@@ -1,5 +1,5 @@
 {
-  "name": "react-infinte-scrolling",
+  "name": "react-infinite-scrolling",
   "version": "1.0.2",
   "description": "A infinite scroll element implementation in React using css animation",
   "main": "src/index.js",
