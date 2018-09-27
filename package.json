@@ -1,5 +1,5 @@
 {
-  "name": "react-infinte-scroll",
+  "name": "react-infinte-scrolling",
   "version": "1.0.2",
   "description": "A infinite scroll element implementation in React using css animation",
   "main": "src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yang03/react-infinite-scroll.git"
+    "url": "git+https://github.com/Yang03/react-infinite-scrolling.git"
   },
   "author": "Yang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yang03/react-infinite-scroll/issues"
+    "url": "https://github.com/Yang03/react-infinite-scrolling/issues"
   },
-  "homepage": "https://github.com/Yang03/react-infinite-scroll#readme",
+  "homepage": "https://github.com/Yang03/react-infinite-scrolling#readme",
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
