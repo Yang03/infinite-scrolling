@@ -2,7 +2,7 @@
   "name": "infinite-scrolling",
   "version": "1.0.1",
   "description": "A infinite scroll element implementation in React using css animation",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src/index.js --out-file index.js",
